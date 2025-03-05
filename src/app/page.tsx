@@ -61,7 +61,7 @@ export default function Home() {
         </ul>
       ))}
 
-      <input type="text" id="newItemInput" ref={inputRef} className='flex' />
+      <input type="text" id="newItemInput" ref={inputRef} className='flex' onKeyPress={handleKeyPress} />
       <button className="btn btn-primary flex bg-red" onClick={handleAddItem}>Add Item</button>
     </div>
   );
