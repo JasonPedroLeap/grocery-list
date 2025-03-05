@@ -18,7 +18,11 @@ export default function Home() {
       )
     }));
   };
-
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+      handleAddItem();
+    }
+  };
   function handleAddItem(): void {
     if (inputRef.current) {
       console.log(inputRef.current.value);
